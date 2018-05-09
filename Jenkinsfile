@@ -15,7 +15,9 @@ pipeline {
             sh 'echo "release"'
           } 
           def projectName = "Jenkins_"+env.JOB_NAME
-	  sh 'asdfasdf'
+          sh 'echo 111'
+	        sh 'asdfasdf'
+          sh 'echo 222'
        }
       }
     }
