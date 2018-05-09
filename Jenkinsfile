@@ -15,9 +15,13 @@ pipeline {
             sh 'echo "release"'
           } 
           def projectName = "Jenkins_"+env.JOB_NAME
+	  sh 'asdfasdf'
        }
       }
     }
   }
+}
+catchError {
+    echo "error"
 }
 
