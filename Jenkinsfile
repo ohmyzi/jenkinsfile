@@ -2,7 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-
+      steps {
+        script { 
         if (env.BRANCH_NAME == "master") {
           sh 'echo "master"'
         } 
@@ -12,7 +13,8 @@ pipeline {
         if (env.BRANCH_NAME == "release") {
           sh 'echo "release"'
         } 
-
+       }
+      }
     }
   }
 }
